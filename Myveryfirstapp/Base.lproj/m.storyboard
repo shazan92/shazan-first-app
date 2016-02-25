@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Myveryfirstapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-29-n8N">
+                                <rect key="frame" x="-293" y="-421" width="995" height="1519"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIn-2J-gnw">
+                                <rect key="frame" x="148" y="113" width="79" height="30"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="clickToHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uAf-IG-pRo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYU-mg-iEc">
+                                <rect key="frame" x="145" y="358" width="85" height="30"/>
+                                <state key="normal" title="Hide Green"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red" translatesAutoresizingMaskIntoConstraints="NO" id="uqe-wp-if1">
+                                <rect key="frame" x="67" y="193" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green" translatesAutoresizingMaskIntoConstraints="NO" id="seq-0b-KIJ">
+                                <rect key="frame" x="67" y="436" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="clickToHideG" destination="DYU-mg-iEc" id="VLT-DI-wDN"/>
+                        <outlet property="hideGButton" destination="DYU-mg-iEc" id="v4x-Zk-oaW"/>
+                        <outlet property="hideGreen" destination="seq-0b-KIJ" id="LNJ-Vg-JLS"/>
+                        <outlet property="hideRButton" destination="CIn-2J-gnw" id="fN3-fw-Un5"/>
+                        <outlet property="hideRed" destination="uqe-wp-if1" id="hHA-Bt-kCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577.5" y="414.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Green" width="275" height="183"/>
+        <image name="Red" width="480" height="480"/>
+        <image name="bg" width="1920" height="1200"/>
+    </resources>
+</document>
